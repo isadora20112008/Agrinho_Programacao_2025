@@ -7,15 +7,15 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f4f9;
-  color: #333;
+  background-color: #dfdfdf8a;
+  color: #33333372;
   line-height: 1.6;
 }
 
 /* Cabeçalho */
 .header {
   background-color: #1e2a38;
-  color: #fff;
+  color: #1b1919;
   padding: 20px 40px;
   display: flex;
   align-items: center;
@@ -61,7 +61,7 @@ body {
 }
 
 .nav-list a:hover {
-  color: #ffc107;
+  color: #8a8984;
 }
 
 /* Sessão */
