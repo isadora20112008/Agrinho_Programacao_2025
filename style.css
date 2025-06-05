@@ -1,0 +1,102 @@
+/* Reset e fontes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+.header {
+  background-color: #1e2a38;
+  color: #fff;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.logo {
+  height: 60px;
+  max-width: 100%;
+}
+
+.title {
+  flex: 2;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navigation {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-list li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.nav-list a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: #ffc107;
+}
+
+/* Sessão */
+.section {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1e2a38;
+}
+
+.section-text {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navigation {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .nav-list li {
+    display: block;
+    margin: 10px 0;
+  }
+}
