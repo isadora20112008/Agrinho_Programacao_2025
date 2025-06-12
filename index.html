@@ -1,34 +1,140 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rodeio Crioulo</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="header">
-    <div class="logo-container">
-      <img src="RodeioCrioulo" class="logo" alt="Logo" />
-    </div>
-    <h1 class="title">Rodeio Crioulo</h1>
-    <nav class="navigation">
-      <ul class="nav-list">
-        <li><a href="#objetivo">Nosso Objetivo</a></li>
-        <li><a href="#quem somos">Quem somos</a></li>
-      </ul>
-    </nav>
-  </header>
+/* Reset básico para o estilo */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <section id="quem-somos" class="section">
-    <div class="section-content">
-      <h2 class="section-title">O que é</h2>
-      <p class="section-text">O Rodeio Crioulo é um dos mais tradicionais rodeios gaúchos.È o evento que envolve animais nas atividaes de montaria, provas de laço, gineteadas, pealo, chasque, cura de terneiro, provas de redéas e outras provas típicas da tradição nas quais são avaliadas as habilidades do cavaleiro e do animal.</p>
-    </div>
-  </section>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
 
-  <main class="content" id="content">
-    <!-- Conteúdo principal futuro -->
-  </main>
-</body>
-</html>
+header {
+  background-color: #2e2e2e;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.navigation {
+  margin-top: 20px;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: #f39c12;
+}
+
+.section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.section-text {
+  font-size: 1.2em;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.provas-slider {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.prova {
+  width: 30%;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.prova-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.image-gallery img {
+  width: 30%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+}
+
+form button {
+  background-color: #2e2e2e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #f39c12;
+}
+
+footer {
+  background-color: #2e2e2e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
